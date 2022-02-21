@@ -9,10 +9,10 @@ Os exercícios foram desenvolvidos utilizando as tecnologias:
 
 Basta realizar o [**download**](https://github.com/netoivony/desafio_capgemini2022/archive/refs/heads/main.zip) e abrir o arquivo index.html com seu navegador padrão.
 
-###Questão 1
+## Questão 1
 
-<img src="desafio_capgemini2022/questao1.png" />
+<img src="questao1.png" />
 
-###Questão 2
+## Questão 2
 
-<img src="desafio_capgemini2022/questao2.png" />
+<img src="questao2.png" />
