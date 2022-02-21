@@ -160,18 +160,19 @@
 
    function verificaForcaSenha() {
       var numeros = /([0-9])/;
-      var alfabeto = /([a-zA-Z])/;
+      var alfabetoMinuculo = /([a-z])/;
+      var alfabetoMaiuscilo = /([A-Z])/;
       var especiais = /([!,@,#,$,%,^,&,*,(,),-,+])/;
 
       if($('#password').val().length<6) 
       {
-         $('#password-status').html("<span style='color:red'>Senha Fraca, insira no mínimo 6 caracteres</span>");
+         $('#password-status').html("<span style='color:red'>Senha Fraca</span>");
       } else {  	
-         if($('#password').val().match(numeros) && $('#password').val().match(alfabeto) && $('#password').val().match(especiais))
+         if($('#password').val().match(numeros) && $('#password').val().match(alfabetoMinuculo) && $('#password').val().match(especiais) && $('#password').val().match(alfabetoMaiuscilo))
          {            
             $('#password-status').html("<span style='color:green'><b>Senha Forte</b></span>");
          } else {
-            $('#password-status').html("<span style='color:orange'>Senha Média, falta inserir um caracter especial</span>");
+            $('#password-status').html("<span style='color:orange'>Senha Média</span>");
          }
       }
    }
